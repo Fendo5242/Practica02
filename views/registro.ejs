@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <br>
+    <br>
+    <br>
+    <br>
+    <title>Registro de nuevo usuario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+          background-image: url('https://i.pinimg.com/originals/3b/e1/cf/3be1cf74f40ee3cad370e4d0932544f2.gif');
+        }
+        #letra{
+            color: rgb(255, 255, 255);
+            font-family: fantasy;
+        }
+        #letra2{
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center card container col-md-3" style="background-color: rgb(35, 36, 66);">
+        <div class="mt-5 mb-5">
+            <center><h1 class="mb-4" id="letra">Registro de usuario</h1></center>
+            <form method="POST" action="/registro">
+            <div class="mb-3">
+                <label for="nombres" class="form-label" id="letra2">Nombre:</label>
+                <input type="text" class="form-control" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label" id="letra2">Correo:</label>
+                <input type="email" class="form-control" name="correo" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellidos" class="form-label" id="letra2">Contraseña:</label>
+                <input type="password" class="form-control" name="contraseña" required>
+            </div>
+            <center><button type="submit" class="btn btn-primary">Agregar</button></center>
+            </form>
+        </div>
+        
+    </div>
+
+</html>

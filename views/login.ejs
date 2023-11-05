@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+          background-image: url('https://i.pinimg.com/originals/3b/e1/cf/3be1cf74f40ee3cad370e4d0932544f2.gif');
+        }
+        #letra{
+            color: rgb(255, 255, 255);
+            font-family: fantasy;
+        }
+        #letra2{
+            color: rgb(255, 255, 255);
+        }
+        .btn-google {
+            color: #545454;
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px 1px #ddd;
+            border-radius: 5px;
+        }
+        .btn {
+            border-radius: 2px;
+            text-transform: capitalize;
+            font-size: 15px;
+            padding: 10px 19px;
+            cursor: pointer
+        }
+    </style>
+</head>
+<br><br><br>
+
+<body>
+    <div class="text-center card container col-md-3" style="background-color: rgb(35, 36, 66);">
+        <div class="mt-5 mb-5">
+        <center><h1 class="mt-5" id="letra">Iniciar sesión</h1></center>
+        <img class="mb-4" src="https://cdn-icons-png.flaticon.com/512/666/666201.png" alt="" width="60"
+            height="57">
+        <form method="post" action="/login">
+            <div class="form-group">
+                <label for="nombre" id="letra2">Nombre de usuario</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="contraseña" id="letra2">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+        </form>
+        <p class="mt-3" id="letra2">¿No tienes una cuenta? <a href="/registro">Regístrate</a></p>
+        <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline" onclick="location.href='/auth/google'" style="background-color: rgb(255, 255, 255);">
+            <img src="https://img.icons8.com/color/22/000000/google-logo.png"> Ingresar con cuenta de Google
+        </button>
+        </div>
+    </div>
+</body>
+</html>
